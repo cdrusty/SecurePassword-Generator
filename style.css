@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', 'sans-serif';
+}
+
+body {
+  background: #002339;
+  color: #fff;
+}
+
+.container {
+  margin: 5%;
+  width: 90%;
+  max-width: 700px;
+}
+
+.display {
+  width: 100%;
+  margin-bottom: 30px;
+  margin-top: 20px; /* Reduced margin-top to avoid overlapping */
+  background: #fff;
+  color: #333;
+  display: flex;
+  flex-wrap: wrap; /* Allow flex items to wrap to the next line on smaller screens */
+  align-items: center; /* Vertically align items */
+  justify-content: space-between;
+  padding: 16px; /* Adjusted padding for better spacing */
+  border-radius: 5px;
+}
+
+.container h1 {
+  font-weight: 500;
+  font-size: 36px; /* Increased font size */
+  width: auto; /* Allow h1 to take its natural width */
+  text-align: left; /* Align h1 to the left */
+  margin-bottom: 10px; /* Added margin for spacing */
+}
+
+.container span {
+  color: #019f55;
+  border-bottom: 4px solid #019f55;
+  padding-bottom: 7px;
+}
+
+.display img {
+  width: 20px; /* Adjusted image size for smaller screens */
+  margin-right: 10px; /* Added margin to separate the image from the input field */
+  cursor: pointer;
+}
+
+.display input {
+  flex: 1; /* Allow the input field to grow and take available space */
+  border: 0;
+  outline: 0;
+  font-size: 16px; /* Adjusted font size for smaller screens */
+  padding: 8px; /* Adjusted padding for better spacing */
+  margin-left: 10px; /* Added margin to separate the input field from the image */
+  border-radius: 5px;
+}
+
+.container button img {
+  width: 20px; /* Adjusted image size for smaller screens */
+  margin-right: 10px; /* Added margin to separate the image from the button text */
+}
+
+.container button {
+  border: 0;
+  outline: 0;
+  background: #019f55;
+  color: #fff;
+  font-size: 16px; /* Adjusted font size for smaller screens */
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  padding: 10px 16px; /* Adjusted padding for better spacing */
+  border-radius: 5px;
+  cursor: pointer;    
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 768px) {
+  /* Add styles for tablets and larger screens here */
+  .container {
+    margin: 8%;
+  }
+  
+  .container h1 {
+    font-size: 30px; /* Adjusted font size for tablets */
+  }
+
+  .display img,
+  .display input,
+  .container button img,
+  .container button {
+    font-size: 18px; /* Adjusted font size for tablets */
+  }
+}
+
+@media (min-width: 1200px) {
+  /* Add styles for larger screens (e.g., desktop) here */
+  .container {
+    margin: 12%;
+  }
+}
