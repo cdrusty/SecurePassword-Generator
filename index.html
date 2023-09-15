@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width">
   <title>iPasswordGen - Generates a secure password</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  
 </head>
 
 <body>
@@ -47,6 +49,14 @@ function createPassword() {
   function copyPassword() {
     passwordBox.select();
     document.execCommand("copy");
+    Swal.fire({
+    icon: 'success',
+    title: 'Password Copied',
+    text: 'The password has been copied to the clipboard!',
+    timer: 2000, // Set how long the notification will be displayed (in milliseconds)
+    timerProgressBar: true,
+    showConfirmButton: false
+  });
   }
   </script>
 </body>
